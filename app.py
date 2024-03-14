@@ -6,6 +6,7 @@ from google.cloud import vision
 from io import BytesIO
 from PIL import Image
 from docx import Document
+import argparse
 
 app = Flask(__name__)
 
@@ -139,4 +140,12 @@ def uploaded_file(filename):
     return send_file(os.path.join(app.config['UPLOAD_FOLDER'], filename))
 
 if __name__ == '__main__':
-    app.run(debug=True)
+    parser = argparse.ArgumentParser(description="OCR ENGINE - AMRITA SPACE")
+    parser.add_argument("-d", "--debug", action="store_true", default=False,
+                        help="Enable debug mode")
+    parser.add_argument("-b", "--bind", default="0.0.0.0", type=str)
+    parser.add_argument("-p", "--port", default="8080", type=int)
+    args = parser.parse_args()
+
+    app.debug = args.debug
+    app.run(host=args.bind, port=args.port)
