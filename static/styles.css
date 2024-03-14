@@ -1,0 +1,70 @@
+/* Apply styles to the banner heading */
+.banner-heading {
+    position: fixed; /* Fix the position */
+    top: 0; /* Position at the top of the page */
+    left: 0; /* Align to the left edge */
+    right: 0; /* Align to the right edge */
+    background-color: #d8344f; /* Deep pink background color */
+    color: white; /* White text color */
+    padding: 10px 0; /* Add padding */
+    text-align: center; /* Center the text */
+    font-weight: bold; /* Bold font weight */
+    z-index: 1000; /* Ensure it's above other content */
+}
+
+/* Apply styles to the left frame */
+.left-frame {
+    background-color: #f0f0f0; /* Light gray background color */
+    padding: 20px; /* Add padding */
+    min-height: 100vh; /* Ensure the frame fills the entire viewport height */
+}
+
+/* Apply styles to the right frame */
+.right-frame {
+    padding: 20px; /* Add padding */
+    min-height: 100vh; /* Ensure the frame fills the entire viewport height */
+}
+
+/* Apply styles to the form elements */
+.form-control-file {
+    font-size: 20px; /* Enlarge font size */
+    margin-bottom: 10px; /* Margin below each form element */
+}
+
+.custom-file-label {
+    color: #d8344f; /* Light pink background color */
+    font-size: 20px; 
+    
+}
+.form-control-file-custom-file-input {
+    padding-bottom: 10px; /* Add padding to the label */
+    cursor: pointer; /* Change cursor to pointer */
+}
+
+/* Apply styles to the "Choose PDF File" label */
+.sea-green-text {
+    color: #129c67; /* Sea green color */
+}
+
+/* Apply styles to the "Upload" button */
+.btn-success {
+    background-color: #2e8b57; /* Sea green background color */
+    border-color: #2e8b57; /* Sea green border color */
+    margin-top: 15px; /* Add margin to the top of the button */
+}
+
+.btn-btn-primary-btn-lg {
+    background-color: #b2ebca; /* Sea green background color */
+    border-color: #2e8b57; /* Sea green border color */
+    margin-top: 15px; 
+    font-size: 20px;
+    box-sizing: 230px;
+    border-radius: 12px;
+}
+
+.testme{
+    color:#d8344f;
+    margin-top: 60px;
+    padding: 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OCR</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+    <link rel="stylesheet"  type="text/css" href="static/styles.css">
+</head>
+<body>
+    <h1 class="banner-heading">Amrita Space OCR Engine</h1>
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-6 left-frame">
+                <!-- Left Frame Content -->
+                <!-- You can add your text content here -->
+                <p class="testme">lorem ipsoes Allows users to create objects. Does not give permission to view, delete, or replace objects. Does not give permission to get object ACLs or set object ACLs as part of an object update request.	orgpolicy.policy.get1
+                    resourcemanager.projects.get2
+                    resourcemanager.projects.list2
+                    storage.objects.create
+                    storage.managedFolders.create
+                    storage.multipartUploads.create
+                    storage.multipartUploads.abort
+                    storage.multipartUploads.listParts
+                    Storage Object Viewer (roles/storage.objectViewer)	Grants access to view objects and their metadata, excluding ACLs.
+                    Can also list the objects and managed folders in a bucket.
+                    
+                    resourcemanager.projects.get2
+                    resourcemanager.projects.list2
+                    storage.managedFolders.get
+                    storage.managedFolders.list
+                    storage.objects.get
+                    storage.objects.list</p>
+            </div>
+            <div class="col-sm-6 right-frame d-flex justify-content-center align-items-center">
+                <!-- Right Frame Content -->
+                <form action="/upload" method="post" enctype="multipart/form-data" class="text-center">
+                    <div class="form-group">
+                        <label for="file" class="custom-file-label">Choose PDF File</label>
+                        <input type="file" class="form-control-file-custom-file-input" id="file" name="file" accept=".pdf" required multiple>
+                    </div>
+                    <button type="submit" class="btn-btn-primary-btn-lg">Upload</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
